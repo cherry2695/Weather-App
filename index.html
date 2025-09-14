@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Weather icon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+
+  <body>
+    <div class="app-container">
+      <div class="weather-card">
+        <div class="card-header">
+          <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+          <p>Get real-time weather information</p>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="cityInput" placeholder="Enter city name" />
+          <button id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div id="weatherInfo" class="weather-info hidden">
+          <div class="current-weather">
+            <h2 id="cityName"></h2>
+            <div class="temp-display">
+              <span id="temperature"></span>
+              <div class="weather-condition">
+                <span id="condition"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="weather-details">
+            <div class="detail-item">
+              <i class="fas fa-tint"></i>
+              <div>
+                <span>Humidity</span>
+                <span id="humidity"></span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-wind"></i>
+              <div>
+                <span>Wind Speed</span>
+                <span id="windSpeed"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-container hidden">
+          <h3>5-Day Forecast</h3>
+          <canvas id="weatherChart"></canvas>
+        </div>
+
+        <div class="footer">
+          <p>Search for any city to get started</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
