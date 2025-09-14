@@ -5,6 +5,11 @@ It fetches real-time weather data from the **OpenWeatherMap API** and displays t
 
 ---
 
+## 🔗 Live Demo
+👉 [Click here to view the Weather App](https://weather-cherry2695.netlify.app)  
+
+---
+
 ## ✨ Features
 - 🔍 Search for any city to get live weather details  
 - 🌡️ Current temperature and weather condition  
@@ -21,5 +26,3 @@ It fetches real-time weather data from the **OpenWeatherMap API** and displays t
 - **JavaScript (ES6)** – Core Logic & API Handling  
 - **Chart.js** – Climate Trend Visualization  
 - **OpenWeatherMap API** – Live Weather Data  
-
----
